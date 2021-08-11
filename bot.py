@@ -22,7 +22,7 @@ def start_message(message):
 @bot.message_handler(regexp='Аренда')
 def аренда(message):
 	#аренда кальянов
-		image = open("photo/arenda.jpg", 'rb')
+		image = open("photo/arenda.JPG", 'rb')
 		bot.send_photo(message.chat.id, image)
 		bot.send_message(message.chat.id, 
 			'АРЕНДА КАЛЬЯНА! \n\n' +
